@@ -3,7 +3,7 @@ VERSION = 4
 PATCHLEVEL = 14
 SUBLEVEL = 78
 EXTRAVERSION =
-NAME = Petit Gorille
+NAME = VISI camera kernel
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
