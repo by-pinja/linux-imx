@@ -20,12 +20,12 @@
 			gpio-key,wakeup;
 		};
 
-		back {
+		/*back {
 			label = "Back";
 			gpios = <&gpio5 20 1>;
-			linux,code = <KEY_BACK>; /* KEY_BACK */
-			gpio-key,wakeup;
-		};
+			linux,code = <KEY_BACK>;*/ /* KEY_BACK */
+			/*gpio-key,wakeup;
+		};*/
 
 		menu {
 			label = "Menu";

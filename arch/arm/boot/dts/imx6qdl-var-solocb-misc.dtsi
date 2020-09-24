@@ -18,14 +18,14 @@
 
 		pinctrl_ft5406_pins: ft5406_pins {
 			fsl,pins = <
-				MX6QDL_PAD_DISP0_DAT23__GPIO5_IO17	0x80000000
+				/*MX6QDL_PAD_DISP0_DAT23__GPIO5_IO17	0x1B0B0*/ /*this pin is used by i2c diff-bus driver IC BUS_RDY signal*/
 			>;
 		};
 	};
 };
 
 &reg_usb_h1_vbus {
-	gpio = <&gpio4 15 0>;
+	/*gpio = <&gpio4 15 0>; this pin is DO4A gpio in sensor C eva-board, new pin TBD*/
 	enable-active-high;
 };
 
@@ -44,8 +44,6 @@
 };
 
 &touch {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_ft5406_pins>;
 	interrupt-parent = <&gpio5>;
 	interrupts = <17 0>;
 };
